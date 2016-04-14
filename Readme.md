@@ -1,7 +1,10 @@
-
 # go-debug
 
- Conditional debug logging for Go libraries.
+ Conditional debug logging for Go libraries. This fork maintains [this
+ patch][race] to prevent a data race in the debug library; if that gets merged
+ let's go back to upstream.
+
+ [race]: https://github.com/tj/go-debug/pull/17
 
  View the [docs](http://godoc.org/github.com/tj/go-debug).
 
