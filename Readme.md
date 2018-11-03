@@ -4,14 +4,14 @@
  patch][race] to prevent a data race in the debug library; if that gets merged
  let's go back to upstream.
 
- [race]: https://github.com/tj/go-debug/pull/17
+ [race]: https://github.com/kevinburke/go-debug/pull/17
 
- View the [docs](http://godoc.org/github.com/tj/go-debug).
+ View the [docs](http://godoc.org/github.com/kevinburke/go-debug).
 
 ## Installation
 
 ```
-$ go get github.com/tj/go-debug
+$ go get github.com/kevinburke/go-debug
 ```
 
 ## Example
@@ -19,7 +19,7 @@ $ go get github.com/tj/go-debug
 ```go
 package main
 
-import . "github.com/tj/go-debug"
+import . "github.com/kevinburke/go-debug"
 import "time"
 
 var debug = Debug("single")
