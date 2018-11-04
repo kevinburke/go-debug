@@ -109,8 +109,7 @@ func deltas(prevGlobal, prev time.Time, color string) string {
 	global := now.Sub(prevGlobal).Nanoseconds()
 	delta := now.Sub(prev).Nanoseconds()
 	ts := now.UTC().Format("15:04:05.000")
-	deltas := fmt.Sprintf("%s %-6s \033["+color+"m%-6s", ts, humanizeNano(global), humanizeNano(delta))
-	return deltas
+	return ts + " " + fmt.Sprintf("%-6s", humanizeNano(global)) + " \033[" + color + "m" + fmt.Sprintf("%-6s", humanizeNano(delta))
 }
 
 // Humanize nanoseconds to a string.
